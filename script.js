@@ -5,7 +5,7 @@ let icon = document.querySelector(".dayOrNight");
 
 setInterval(() => {
   let d = new Date();
-  let h = d.getHours() < 10 ? "0" + d.getHours() : d.getHours();
+  let h = d.getHours();
   let hrs;
   if (h > 12) {
     hrs = h - 12;
